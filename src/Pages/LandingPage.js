@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Navbar from './Navbar'
+import Navbar from '../Components/Navbar'
 import CountUp from 'react-countup'
 import ScrollTrigger from 'react-scroll-trigger'
 import AOS from 'aos'
@@ -14,9 +14,9 @@ const LandingPage = () => {
     return (
         <div className="h-screen w-screen">
             <Navbar />
-            {/* <img className='w-screen h-[80%] mt-24' src="https://easysol.in/assets/img/posImg.jpg" alt="" /> */}
-            <div className="w-screen justify-center flex items-center h-[80vh] bg-no-repeat bg-cover mt-24 bg-[url('https://easysol.in/assets/img/posImg.jpg')]">
-                <div className="w-[75%]">
+            <div className="w-screen justify-center flex items-center mt-24">
+                <img className='w-full h-[75vh]' src="https://easysol.in/assets/img/posImg.jpg" alt="" />
+                <div className="absolute w-[75%]">
                     <h1 className='text-gray-800 text-6xl leading-tight font-bold w-[45%]'>We provide <br /> <span className='underline text-rose-600'> simplified solutions <br /></span> for your business!</h1>
                 </div>
             </div>
