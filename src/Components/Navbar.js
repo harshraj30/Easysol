@@ -32,7 +32,7 @@ const Navbar = () => {
                             <div className="absolute z-20 hidden group-hover:block -ml-16">
                                 <div className="relative mt-12">
                                     <div className=" shadow-xl flex -mt-[10px] border bg-white flex-col text-md font-semibold">
-                                        <Link className='hover:bg-gray-100' href="">
+                                        <Link className='hover:bg-gray-100'>
                                             <div className="">
                                                 <div onMouseOver={handleHover} onMouseLeave={() => { setHidden(true) }} className="flex p-5 justify-between items-center">
                                                     <h1 className='group'>EasySol Pharma</h1>
@@ -40,15 +40,15 @@ const Navbar = () => {
                                                         <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                                                     </svg>
 
-                                                {!hidden ? <div className={`w-60 absolute z-20 top-0 ml-[242px] shadow-xl`}>
-                                                    <div className="flex border bg-white flex-col text-md font-semibold">
-                                                        <Link className='hover:bg-gray-100 p-5 ' >Warehouses</Link>
-                                                        <Link className='hover:bg-gray-100 p-5 ' >C & F</Link>
-                                                        <Link className='hover:bg-gray-100 p-5 ' >Distributers</Link>
-                                                        <Link className='hover:bg-gray-100 p-5 ' >Retail Chain</Link>
-                                                        <Link className='hover:bg-gray-100 p-5 ' >Chemist</Link>
-                                                    </div>
-                                                </div> : ""}
+                                                    {!hidden ? <div className={`w-60 absolute z-20 top-0 ml-[242px] shadow-xl`}>
+                                                        <div className="flex border bg-white flex-col text-md font-semibold">
+                                                            <Link className='hover:bg-gray-100 p-5 ' >Warehouses</Link>
+                                                            <Link className='hover:bg-gray-100 p-5 ' >C & F</Link>
+                                                            <Link className='hover:bg-gray-100 p-5 ' >Distributers</Link>
+                                                            <Link className='hover:bg-gray-100 p-5 ' >Retail Chain</Link>
+                                                            <Link className='hover:bg-gray-100 p-5 ' >Chemist</Link>
+                                                        </div>
+                                                    </div> : ""}
                                                 </div>
 
                                             </div>
