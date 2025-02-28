@@ -13,10 +13,18 @@ const Navbar = () => {
         <div className="w-screen flex justify-center bg-gray-200 shadow-lg shadow-gray-500 fixed z-50 top-0 py-3">
             <div className="w-[80%] flex justify-between items-center">
                 <div className="">
-                    <img className='w-48' src="https://easysol.in/assets/img/icon/eslogonew.png" alt="" />
+                    <p className='text-4xl font-bold text-rose-500'>Logo</p>
                 </div>
                 <div className="flex items-center gap-7 text-rose-700 ">
-                    <Link className='border w-20 border-rose-500 group'><p className='group-hover:bg-rose-500 px-5 py-2.5 text-rose-500 duration-700 w-0 group-hover:w-full group-hover:text-white '>Home</p></Link>
+                    {/* <Link className='border w-20 border-rose-500 group'><p className='group-hover:bg-rose-500 px-5 py-2.5 text-rose-500 duration-700 w-0 group-hover:w-full group-hover:text-white '>Home</p></Link> */}
+                    <Link to="/" className="relative px-5 py-3 overflow-hidden font-medium text-rose-600 bg-gray-200 border border-rose-500 rounded-lg shadow-inner group">
+                        <span className="absolute top-0 left-0 w-0 h-0 transition-all duration-200 border-t-2 border-rose-600 group-hover:w-full ease"></span>
+                        <span className="absolute bottom-0 right-0 w-0 h-0 transition-all duration-200 border-b-2 border-rose-600 group-hover:w-full ease"></span>
+                        <span className="absolute top-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-rose-600 group-hover:h-full ease"></span>
+                        <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 delay-200 bg-rose-600 group-hover:h-full ease"></span>
+                        <span className="absolute inset-0 w-full h-full duration-300 delay-300 bg-rose-600 opacity-0 group-hover:opacity-100"></span>
+                        <span className="relative transition-colors duration-300 delay-200 group-hover:text-white ease">Home</span>
+                    </Link>
                     <Link className='hover:text-rose-500'>About Us</Link>
                     <Link className='hover:text-rose-500'>
                         {/* <div className=""> */}
@@ -35,7 +43,7 @@ const Navbar = () => {
                                         <Link className='hover:bg-gray-100'>
                                             <div className="">
                                                 <div onMouseOver={handleHover} onMouseLeave={() => { setHidden(true) }} className="flex p-5 justify-between items-center">
-                                                    <h1 className='group'>EasySol Pharma</h1>
+                                                    <h1 className='group'>Market Project</h1>
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5">
                                                         <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                                                     </svg>
@@ -53,12 +61,12 @@ const Navbar = () => {
 
                                             </div>
                                         </Link>
-                                        <Link className='hover:bg-gray-100 p-5 ' >EasySol POS</Link>
+                                        <Link to="/Disease_Detector" className='hover:bg-gray-100 p-5 ' >Disease Detector</Link>
                                         <Link className='hover:bg-gray-100 p-5 ' >Departmental Store Software</Link>
                                         <Link className='hover:bg-gray-100 p-5 ' >Grocery Store Software</Link>
                                         <Link className='hover:bg-gray-100 p-5 ' >Retail/ General Store</Link>
-                                        <Link className='hover:bg-gray-100 p-5 ' >EasySol Manufacturing</Link>
-                                        <Link className='hover:bg-gray-100 p-5 ' >EasySol Trading</Link>
+                                        <Link className='hover:bg-gray-100 p-5 ' >Manufacturing Software</Link>
+                                        <Link className='hover:bg-gray-100 p-5 ' >Trading Software</Link>
                                     </div>
                                 </div>
                             </div>
@@ -67,11 +75,7 @@ const Navbar = () => {
 
                         {/* </div> */}
                     </Link>
-                    <Link className='hover:text-rose-500'>How to Buy</Link>
-                    <Link className='hover:text-rose-500'>Clients</Link>
-                    <Link className='hover:text-rose-500'>Downloads</Link>
                     <Link className='hover:text-rose-500'>Contact Us</Link>
-                    <Link className='hover:text-rose-500'>Career</Link>
                     <Link className='hover:text-rose-500'>
                         <div className="group">
                             <div className="flex items-center">
@@ -99,3 +103,5 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
